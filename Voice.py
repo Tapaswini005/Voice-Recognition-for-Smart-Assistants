@@ -159,7 +159,7 @@ class VoiceAssistant:
     def get_weather(self, city):
         """Get current weather for a city"""
         try:
-            API_KEY = "44bb1c57f29e742dbced10cab66b7b87"
+            API_KEY = "Place_key_here"
             url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
             response = requests.get(url)
             data = response.json()
